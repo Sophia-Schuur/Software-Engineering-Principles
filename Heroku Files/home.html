@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+
+    <title>Smile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/smiles.js"></script>
+    <script type="text/javascript">
+    // This is a jQuery convention to say that once all the files
+        // load, the function Smile.start() should run.
+        // This function is defined in the smiles.js
+        $(function () {
+            Smile.start();
+        });</script>
+</head>
+<body>
+
+    <header>
+        <img src="images/smile7.png" alt="Smile Header"> <!-- smile header pic-->
+       
+        
+        <div class="create">
+            <a class="mybutton share-smile">
+                Share a Smile
+            </a>
+            
+            <form method="get" action="index.html">
+                <div class="message">
+                    Tell us something that made you smile.
+                </div>
+
+
+                <input type="text" placeholder="Title" class="title-input" name="title" />
+
+                <textarea placeholder="Share a smile..."
+                          class="story-input"
+                          name="story"></textarea>
+
+                <label>
+                    How happy did this make you?
+                </label>
+
+                <select class="happiness-level-input"
+                        name="happiness-level">
+
+                    <option value="1">
+                        Happy
+                    </option>
+
+                    <option value="2">
+                        Really happy
+                    </option>
+
+                    <option value="3">
+                        So happy, I can't stop smiling!
+                    </option>
+
+                </select>
+
+                <input type="submit" class="mybutton submit-input" id="bb" value="Post" />
+
+                <a class="mybutton return" href="index.html">
+                    Cancel
+                </a>
+
+
+            </form>
+            
+        </div>
+    </header>
+    
+    <section class="mainbody">
+        <div class="smiles">
+            <!-- SMILE POST 1------------------------------>
+            <article class="smile">
+
+                <div class="title">
+
+                    SMILE TITLE 1
+                </div>
+
+
+                <div class="happiness-level-col">
+                    <div class="happiness-level">
+                         
+
+                    </div>
+                </div>
+
+
+
+                <div class="story-col">
+                    <div class="story">
+                       
+                    </div>
+                </div>
+
+                <div class="like-col">
+                    <button class="like">
+                        like
+                    </button>
+
+                    <div class="count">
+                        1
+                    </div>
+                </div>
+
+                <div class="timestamp">
+                    Posted at 1:03pm May 22, 2015
+                </div>
+
+            </article>
+
+
+            <!-- SMILE POST 2------------------------------>
+            <!--<article class="smile">
+
+
+                <div class="title">
+
+                    SMILE TITLE 2
+                </div>
+
+
+                <div class="happiness-level-col">
+                    <div class="happiness-level">
+                        <div class="happiness-level-2">
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="story-col">
+                    <div class="story">
+                        Today, at the age of 70, my grandfather graduated from college with a bachelor’s degree in business studies.  He’s been a successful business owner most of his life, but he told me he earned his degree to fulfill a promise he made to his mother before she lost her battle with cancer 50 years ago.  MMT
+                    </div>
+                </div>
+
+                <div class="like-col">
+                    <button class="like">
+                        like
+                    </button>
+
+                    <div class="count">
+                        1
+                    </div>
+                </div>
+
+                <div class="timestamp">
+                    Posted at 1:03pm May 22, 2015
+                </div>
+
+            </article>-->
+
+
+            <!-- SMILE POST 3------------------------------>
+            <!--<article class="smile">
+
+
+                <div class="title">
+
+                    SMILE TITLE 3
+                </div>
+
+
+                <div class="happiness-level-col">
+                    <div class="happiness-level">
+                        <div class="happiness-level-3">
+                             
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="story-col">
+                    <div class="story">
+                        Today, my mom is a healthy 54 year old who successfully owns and operates a popular bakery downtown – a goal she had all her life.  15 years ago she was diagnosed with cancer.  In the face of death, she quit her store clerk job, opened the bakery, started chemo therapy, and succeeded on all fronts.  MMT
+                    </div>
+                </div>
+
+                <div class="like-col">
+                    <button class="like">
+                        like
+                    </button>
+
+                    <div class="count">
+                        1
+                    </div>
+                </div>
+
+                <div class="timestamp">
+                    Posted at 1:03pm May 22, 2015
+                </div>
+              
+            </article>-->
+        </div>
+    </section>
+    
+</body>
+</html>

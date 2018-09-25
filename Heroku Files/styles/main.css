@@ -1,0 +1,228 @@
+
+header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #9D82AD;
+}
+
+body {
+    
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FAC6C5;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+form {
+
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FAC6C5;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+.mainbody {
+    padding-top: 165px;
+    display: inline-block;
+}
+
+.mybutton {
+    transition: opacity .2s ease-out,background-color .2s ease-out;
+    display: block;
+    border: outset;
+    background-color: #D8E4F4;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mybutton:hover {
+    background-color: #E9EBDB;
+}
+
+.share-smile {
+    width: 100%;
+}
+
+
+.smile {
+    
+    border-width: 5px;
+    border-style: solid;
+    border-image: url('../images/borderimage1.jpg') 25% stretch;
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 1%;
+    background-color: #E9EBDB;
+    padding-left: 1%;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.happiness-level-col {
+    width: 80px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+
+.happiness-level {
+    border: none;
+    background: none;
+    color: transparent;
+   
+    width: 120px;
+    height: 80px;
+}
+
+.happiness-level-1 {
+    border: none;
+    background: none;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../images/happiness-level.png');
+    width: 40px;
+    height: 80px;
+}
+
+.happiness-level-2 {
+    border: none;
+    background: none;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../images/happiness-level.png');
+    width: 40px;
+    height: 80px;
+    background-position: -41px;
+}
+
+.happiness-level-3 {
+    border: none;
+    background: none;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../images/happiness-level.png');
+    width: 40px;
+    height: 80px;
+    background-position: -82px;
+}
+
+.like-col {
+    width: 80px;
+    text-align: center;
+    float: right;
+    margin: 10px;
+}
+
+.like {
+    border: none;
+    background: none;
+    color: transparent;
+    background-image: url('../images/heart.png');
+    width: 48px;
+    height: 42px;
+}
+
+.story-col {
+    width: calc(100% - 220px);
+    float: left;
+    left: 100px;
+    text-align: justify;
+}
+
+.timestamp {
+    margin-left: 100px;
+    clear: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.space {
+    background-color: aqua;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .smiles {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 40px;
+        column-gap: 40px;
+        -moz-column-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .smiles {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 40px;
+        column-gap: 40px;
+        -moz-column-gap: 40px;
+    }
+}
+
+
+.mainbody {
+    width: 80%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.title-input {
+    display: inline-block;
+    width: 100%;
+    background-color: #F7F8F3;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.story-input {
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2%;
+    background-color: #F7F8F3;
+}
+
+.happiness-level-input {
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    background-color: #F7F8F3;
+}
+
+.return {
+    margin-bottom: 2%;
+    width: 10%;
+}
+
+
+.submit-input {
+    float: right;
+}
+
+
