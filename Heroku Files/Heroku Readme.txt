@@ -1,4 +1,4 @@
-Working URL: https://sschuur-php.herokuapp.com/
+Working URL: https://sschuur-smileapp.herokuapp.com/
 
 "Heroku Files" and everything in it is the actual folder deployed to Heroku now. 
 "SmileAPI" and its contents included for grading purposes, but are not neccessary for Heroku deployment.
