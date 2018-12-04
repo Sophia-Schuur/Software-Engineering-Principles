@@ -231,6 +231,7 @@ def getCurrentApplications():
 
 	query = TAApplication.query.filter_by(studentId=user.studentId).all();
 
+
 	result = [];
 	for row in query:
 		result.append(row_to_obj_ta_application(row))
@@ -256,7 +257,8 @@ def getInstructorApplications():
 
 	result = [];
 	for row in query:
-		result.append(row_to_obj_ta_application(row))
+		if row.applicationStatus == "Under review":
+		    result.append(row_to_obj_ta_application(row))
 
 	return jsonify({"status": 1, "applications": result})
 
@@ -407,6 +409,7 @@ def row_to_obj_course(row):
 	row = {
 			"id": row.id,
 			"course_name": row.courseName,
+			"faculty_id": row.facultyId,
 			"title": row.title,
 			"description": row.description,
 			"instructor": row.instructor
