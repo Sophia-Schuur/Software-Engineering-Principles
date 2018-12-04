@@ -1,0 +1,419 @@
+header {
+    width: 100%;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: white;
+}
+
+.headerLogo {
+    color: #717170;
+    line-height: 3;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.04375em;
+    /*text-transform: uppercase;*/
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.body {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../images/cub.jpg');
+    margin-top: 121px;
+    display: inline-block;
+    background-color: #d9d9d9;
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+
+.backgroundSmall {
+    height: 800px;
+}
+
+.backgroundBig {
+    height: 100% !important;
+}
+
+.background2 {
+    height: 100% !important;
+}
+/*.container {
+    height: 490px;
+    width: 450px;
+    display: block;
+    padding-bottom: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 100px;
+    position: center;
+    background-color: #EFFAEE;
+    background: linear-gradient(#bf4059, #A60F2D);
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: cadetblue;
+    border-radius: 10px;
+}*/
+.bannerInstructor {
+    position: fixed;
+    margin-left: 20px;
+    float: left;
+    height: 100%;
+    width: 200px;
+    display: inline-block;
+    background-color: #EFFAEE;
+    background: linear-gradient(#bf4059, #A60F2D);
+    clear: left;
+}
+
+.bannerStudent {
+    position: fixed;
+    margin-left: 20px;
+    float: left;
+    height: 100%;
+    width: 200px;
+    display: inline-block;
+    background-color: #EFFAEE;
+    background: linear-gradient(#bf4059, #A60F2D);
+    clear: left;
+}
+
+.logo {
+    position: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    height: 100%;
+    background-image: url('../images/WSULogoBorder1.png');
+}
+
+/*.gui {
+    margin-left: 15px;
+    float: left;
+    width: 350px;
+}
+
+.instructor-create {
+    margin-left: 15px;
+    float: left;
+    width: 350px;
+}
+
+.student-create {
+    margin-left: 15px;
+    float: left;
+    width: 350px;
+}
+
+.login {
+    margin-left: 15px;
+    float: left;
+    width: 350px;
+}*/
+
+.profileContainer {
+    background: rgba(204, 204, 204, 0.8);
+    width: 400px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*background-color: #d9d9d9;
+    margin-left: 15px;
+    float: left;*/
+    
+}
+
+.big-profile-container {
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    /*float:left;*/
+    display: block;
+    /*overflow: scroll;*/
+    background: rgba(204, 204, 204, 0.8);
+    /*width: 85%;*/
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-left: 210px;
+    margin-top: 30px;
+    max-width: calc(112% - 200px);
+}
+
+.instructor-create-gui-button {
+    display: block;
+}
+
+.inputProfileText {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #bdc7d8;
+    border-color: rgb(189, 199, 216);
+    font-size: 18px;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    width: 350px;
+    display: block;
+    /*want in separate area?*/
+    margin-bottom: 12px;
+    display: block;
+}
+
+.BigMessage {
+    font-weight: bold;
+    color: #490317;
+    font-family: "Poppins", sans-serif;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.SmallMessage {
+    font-weight: bold;
+    color: #490317;
+    font-family: "Poppins", sans-serif;
+
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+.myButton {
+    /*text-transform:uppercase;*/
+    background: repeating-linear-gradient(#f2f2f2, #e6e6e6);
+    background-color: #f2f2f2;
+    border-style: solid;
+    border-color: #a6a6a6;
+    border-width: 2px;
+    color: #595959;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center;
+    position: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    width: 320px;
+    padding: 15px;
+}
+
+.myButton:hover {
+    background: repeating-linear-gradient(#ffffff, #f2f2f2);
+}
+
+.myButton:active {
+    background: repeating-linear-gradient(#bfbfbf, #d9d9d9);
+}
+
+.current-student-application {
+    width: 100%;
+    background-color: #978989;
+    /* margin-bottom: 1%; */
+    display: inline-block;
+}
+
+.generic-label {
+    font-family: "Poppins", sans-serif;
+    margin-right: 5%;
+    text-align: center;
+    float: left;
+    clear: left;
+    color: #490317;
+}
+
+.dropdown-select {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.user-type {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.view-profile {
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.profile-attribute {
+    
+    float: left;
+    padding-left: 10px;
+    display: block;
+    font-size: 18px;
+    padding-top: 12px;
+    /*float: right;*/
+    color: #490317;
+}
+.profile-label {
+   
+   float: left;
+   clear: left;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #490317;
+}
+
+.profile-back-student {
+    margin-top: 250px;
+}
+
+.add-course-button {
+    margin-top: 200px;
+}
+
+.courseContainer {
+    max-width: calc(190% - 50px);
+    background: repeating-linear-gradient(#f2f2f2, #e6e6e6);
+    background-color: #f2f2f2;
+    border-style: solid;
+    border-color: #a6a6a6;
+    border-width: 2px;
+    color: #595959;
+    margin-bottom: 5px;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center;
+    position: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 2000px;
+    padding: 15px;
+}
+
+.button-wrapper {
+    margin-right:  150px;
+    margin-top: 28px;
+    display: inline-block;
+}
+
+.approve-ta-application-button {
+    background: repeating-linear-gradient(#DFF4E3, #b3e5bc);
+    background-color: #DFF4E3;
+}
+
+.approve-ta-application-button:hover {
+    background: repeating-linear-gradient(#ecf8ee, #c6ebcd);
+}
+
+.approve-ta-application-button:active {
+    background: repeating-linear-gradient(#c6ebcd, #a0deab);
+}
+
+.decline-ta-application-button {
+    background: repeating-linear-gradient(#f1c1c1, #e79897);
+}
+
+
+.decline-ta-application-button:hover {
+    background: repeating-linear-gradient(#f6d5d5, #ecacac);
+}
+
+
+.decline-ta-application-button:active {
+    background: repeating-linear-gradient(#ecacac, #e38282);
+}
+
+.current-application-delete-button {
+    background: repeating-linear-gradient(#f1c1c1, #e79897);
+}
+
+.current-application-delete-button:hover {
+     background: repeating-linear-gradient(#f6d5d5, #ecacac);
+}
+
+.current-application-delete-button:active {
+    background: repeating-linear-gradient(#ecacac, #e38282);
+}
+
+.banner-button {
+    background: repeating-linear-gradient(#f2f2f2, #e6e6e6);
+    background-color: #f2f2f2;
+    border-style: solid;
+    border-color: #a6a6a6;
+    border-width: 2px;
+    color: #595959;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    position: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    width: 320px;
+    padding: 15px;
+    width: 180px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.banner-button:hover {
+    background: repeating-linear-gradient(#ffffff, #f2f2f2);
+}
+
+.banner-button:active {
+    background: repeating-linear-gradient(#bfbfbf, #d9d9d9);
+}
+
+.editingProfileContainer {
+    background: rgba(204, 204, 204, 0.8);
+    width: 400px;
+    padding: 40px;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-top: 50px;
+    /*background-color: #d9d9d9;
+    margin-left: 15px;
+    float: left;*/
+    float: left;
+}
+
+
+
+

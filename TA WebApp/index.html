@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Index</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+        <script src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/frontend.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                Frontend.start();
+            });
+        </script>
+
+</head>
+<body>
+    <header>
+
+        <div class="headerLogo">
+            WSU TeachEzie
+        </div>
+    </header>
+
+    <div class="background backgroundSmall">
+
+        <form class='profileContainer gui'>
+            <div class="BigMessage">Welcome to TeachEzie</div>
+
+            <input type="button" class="myButton login-gui-button" value="Login" />
+            <!--<input type="button" class="myButton logout-gui-button" value="Logout" />-->
+            <div class="SmallMessage">New Instructor?</div>
+            <input type="button" class="myButton instructor-create-gui-button" value="Create Instructor Profile" />
+
+            <div class="SmallMessage">New Student?</div>
+            <input type="button" class="myButton student-create-gui-button" value="Create Student Profile" />
+
+            <!--<input type="button" class="myButton view-profile-gui-button" value="View profile" />-->
+            <!--<input type="button" class="myButton view-courses-gui-button" value="View Courses" />-->
+            <!--<input type="button" class="myButton edit-profile" value="Edit Profile" />-->
+        </form>
+
+        <form class='profileContainer instructor-create'>
+            <div class="BigMessage">Enter your instructor profile info...</div>
+            <input type="text" placeholder="Faculty ID" class="inputProfileText instructor-id-input" name="facultyid" />
+            <input type="text" placeholder="First name" class="inputProfileText instructor-first-name-input" name="facultyfirstname" />
+            <input type="text" placeholder="Last name" class="inputProfileText instructor-last-name-input" name="facultylastname" />
+            <input type="text" placeholder="Email" class="inputProfileText instructor-email-input" name="facultyemail" />
+            <input type="text" placeholder="Phone" class="inputProfileText instructor-phone-input" name="facultyphone" />
+            <input type="text" placeholder="Office" class="inputProfileText instructor-office-input" name="facultyofficeinput" />
+            <input type="text" placeholder="Password" class="inputProfileText instructor-password-input" name="facultypasswordinput" />
+            <input type="button" class="myButton instructor-create-submit" value="Submit" />
+            <input type="button" class="myButton instructor-create-cancel" value="Cancel" />
+        </form>
+
+        <form class='profileContainer student-create'>
+            <div class="BigMessage">Enter your student profile info...</div>
+            <input type="text" placeholder="Student ID" class="inputProfileText student-id-input" name="studentid" />
+            <input type="text" placeholder="First name" class="inputProfileText student-first-name-input" name="studentfirstname" />
+            <input type="text" placeholder="Last name" class="inputProfileText student-last-name-input" name="studentlastname" />
+            <input type="text" placeholder="Email" class="inputProfileText student-email-input" name="studentemail" />
+            <input type="text" placeholder="Major" class="inputProfileText student-major-input" name="studentmajorinput" />
+            <input type="text" placeholder="GPA" class="inputProfileText student-gpa-input" name="studentgpainput" />
+            <input type="text" placeholder="Graduation date" class="inputProfileText student-graduation-input" name="studentgraduationinput" />
+            <input type="text" placeholder="Password" class="inputProfileText student-password-input" name="studentpasswordinput" />
+            <input type="button" class="myButton student-create-submit" value="Submit" />
+            <input type="button" class="myButton student-create-cancel" value="Cancel" />
+        </form>
+
+        <form class='profileContainer login'>
+            <div class="BigMessage login-message">Log in...</div>
+            <input type="text" placeholder="Email" class="inputProfileText login-username" name="loginusername" />
+            <input type="text" placeholder="Password" class="inputProfileText login-password" name="loginpassword" />
+
+            <div class="SmallMessage">Are you a student or an instructor?</div>
+            <select class="user-type">
+                <option value='student'>Student</option>
+                <option value='instructor'>Instructor</option>
+            </select>
+            <input type="button" class="myButton login-submit" value="Submit" />
+            <input type="button" class="myButton login-cancel" value="Cancel" />
+        </form>
+
+        <form class='view-profile'>
+
+            <section class="editingProfileContainer display-profile-instructor">
+                <div class="BigMessage">Your Profile</div>
+
+                <div class="profile-label SmallMessage">Name: </div>
+                <div class="profile-attribute profile-name-instructor"></div>
+
+                <div class="profile-label SmallMessage">Email: </div>
+                <div class="profile-attribute profile-email-instructor"></div>
+
+                <div class="profile-label SmallMessage">Phone: </div>
+                <div class="profile-attribute profile-phone-instructor"></div>
+
+                <div class="profile-label SmallMessage">Faculty ID: </div>
+                <div class="profile-attribute profile-faculty-id"></div>
+
+                <div class="profile-label SmallMessage">Field: </div>
+                <div class="profile-attribute profile-office-instructor"></div>
+
+                <!--<input type="button" class="myButton add-course-button" value="Add Course" />-->
+                <input type="button" class="myButton profile-back-instructor" value="Back" />
+
+                <!--<input type="button" class="myButton instructor-list-ta-applications-button" value="Current TA Applications" />-->
+
+            </section>
+
+
+
+            <section class="editingProfileContainer display-profile-student">
+                <div class="BigMessage">Your Profile</div>
+
+                <div class="profile-label SmallMessage">Name: </div>
+                <div class="profile-attribute profile-name-student"></div>
+
+                <div class="profile-label SmallMessage">Email: </div>
+                <div class="profile-attribute profile-email-student"></div>
+
+                <div class="profile-label SmallMessage">Student ID: </div>
+                <div class="profile-attribute profile-student-id"></div>
+
+                <div class="profile-label SmallMessage">GPA: </div>
+                <div class="profile-attribute profile-gpa"></div>
+
+                <div class="profile-label SmallMessage">Graduation Date: </div>
+                <div class="profile-attribute profile-graduation-date"></div>
+
+                <div class="profile-label SmallMessage">Major: </div>
+                <div class="profile-attribute profile-major"></div>
+
+                <input type="button" class="myButton profile-back-student" value="Back" />
+                <!--<input type="button" class="myButton student-list-ta-positions-button" value="Available TA Positions" />
+            <input type="button" class="myButton student-view-current-applications" value="View Status of Current Applications" />
+            <input type="button" class="myButton view-ta-positions-apply" value="Apply For Position" />-->
+            </section>
+
+        </form>
+
+        <form class='editingProfileContainer edit-instructor-profile'>
+            <div class="BigMessage">Edit Profile</div>
+            <input type="text" value="" class="inputProfileText edit-instructor-email" />
+            <input type="text" value="" class="inputProfileText edit-phone" />
+            <input type="text" value="" class='inputProfileText edit-office' />
+
+            <input type="button" value="Change Password" class="myButton change-password" />
+            <input type="button" value="Submit" class="myButton edit-instructor-submit" />
+            <input type="button" value="Back" class="myButton edit-instructor-back" />
+        </form>
+
+        <form class='editingProfileContainer edit-student-profile'>
+            <div class="BigMessage">Edit Profile</div>
+            <input type="text" class="inputProfileText edit-student-email" label="Email" value="" />
+            <input type="text" class='inputProfileText edit-major' value="" />
+            <input type="text" class='inputProfileText edit-gpa' value="" />
+            <input type="text" class='inputProfileText edit-graduation-date' value="" />
+
+            <input type="button" value="Change Password" class="myButton change-password" />
+            <input type="button" value="Submit" class="myButton edit-student-submit" />
+            <input type="button" value="Back" class="myButton edit-student-back" />
+        </form>
+
+        <form class='editingProfileContainer change-password-form'>
+            <div class="BigMessage">Change Password</div>
+            <input type="text" class="inputProfileText old-password" placeholder="Old Password" value="" />
+            <input type="text" class="inputProfileText new-password" placeholder="New Password" value="" />
+            <input type="text" class="inputProfileText confirm-new-password" placeholder="Confirm New Password" value="" />
+
+            <input type="button" class="myButton new-password-submit" value="Submit" />
+            <input type="button" class="myButton instructor-new-password-cancel" value="Cancel" />
+        </form>
+
+        
+        <form class='editingProfileContainer instructor-add-course'>
+            <div class="BigMessage">Add a Class</div>
+            <input type="text" placeholder="Class Catalog ID" class="inputProfileText course-id-input" name="classid" />
+            <input type="text" placeholder="Class Name" class="inputProfileText course-name-input" name="classnamne" />
+            <input type="text" placeholder="Class Description" class="inputProfileText course-idk-input" name="classidk" />
+
+            <input type="button" class="myButton add-course-submit" value="Submit" />
+            <input type="button" class="myButton add-course-cancel" value="Cancel" />
+        </form>
+
+        <form class='apply-ta-position editingProfileContainer'>
+            <div class="BigMessage">TA Application Form</div>
+
+            <input type="text" placeholder="Faculty ID" class="inputProfileText ta-application-facultyid-input" />
+            <input type="text" placeholder="Course Name" class="inputProfileText ta-application-coursename-input" />
+
+
+
+            <div class="SmallMessage">Grade Recieved</div>
+            <select class="ta-application-grade-input dropdown-select" id="ta-application-grade-input">
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+-</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option>
+            </select>
+
+            <div class="SmallMessage">Semester Taken: </div>
+            <div class="ta-application-semester-input">
+                <select class="ta-application-season-input dropdown-select" label="Grade recieved in course">
+                    <option value="Fall">Fall</option>
+                    <option value="Spring">Spring-</option>
+                    <option value="Summer">Summer</option>
+                </select>
+
+                <select class="ta-application-year-input dropdown-select" label="Grade recieved in course">
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+
+            <div class="SmallMessage">Prior TA?</div>
+            <select class="ta-application-grade-input dropdown-select" id="ta-application-grade-input">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+
+            <input type="button" class="myButton apply-ta-position-submit" value="Submit" />
+            <input type="button" class="myButton apply-ta-position-back" value="Cancel" />
+
+        </form>
+
+        <div class="bannerStudent">
+            <input type="button" class="banner-button view-profile-gui-button" value="View profile" />
+
+            <input type="button" class="banner-button edit-profile" value="Edit Profile" />
+            <input type="button" class="banner-button view-ta-positions-apply" value="Apply For Position" />
+            <input type="button" class="banner-button logout-gui-button" value="Logout" />
+        </div>
+
+
+        <div class="bannerInstructor">
+            <input type="button" class="banner-button view-profile-gui-button" value="View profile" />
+            <input type="button" class="banner-button add-course-button" value="Add Course" />
+            <input type="button" class="banner-button edit-profile" value="Edit Profile" />
+            <input type="button" class="banner-button logout-gui-button" value="Logout" />
+        </div>
+
+    </div>
+
+    <div class="background backgroundBig">
+
+        <div class="bannerInstructor">
+            <input type="button" class="banner-button view-profile-gui-button" value="View profile" />
+            <input type="button" class="banner-button add-course-button" value="Add Course" />
+            <input type="button" class="banner-button edit-profile" value="Edit Profile" />
+            <input type="button" class="banner-button logout-gui-button" value="Logout" />
+        </div>
+
+        <form class='big-profile-container instructor-display-ta-applications' id='instructor-display-ta-applications'>
+            <div class="BigMessage">Pending Applications</div>
+            <section class='instructor-applications' id='instructor-applications'>
+                <article class='courseContainer ta-application-instructor'>
+
+                    <div class="profile-label SmallMessage">Student ID: </div>
+                    <div class='profile-attribute instructor-ta-application-student-id'></div>
+                    <div class="profile-label SmallMessage">Course Name: </div>
+                    <div class='profile-attribute instructor-ta-application-course-name'></div>
+
+
+
+                    <div class="profile-label SmallMessage">Grade Recieved: </div>
+                    <div class='profile-attribute instructor-ta-application-grade-recieved'></div>
+
+                    <div class='button-wrapper'>
+                        <input type="button" class="myButton approve-ta-application-button" value="Accept" />
+                        <input type="button" class="myButton decline-ta-application-button" value="Reject" />
+                    </div>
+                    <div class="profile-label SmallMessage">Semester taken: </div>
+                    <div class='profile-attribute instructor-ta-application-semester-taken'></div>
+                    <div class="profile-label SmallMessage">Prior TA: </div>
+                    <div class='profile-attribute instructor-ta-application-prior-ta'></div>
+                    <div class="profile-label SmallMessage">Application Date: </div>
+                    <div class='profile-attribute instructor-ta-application-date'></div>
+
+
+                </article>
+            </section>
+            <!--<input type="button" class="myButton instructor-view-ta-positions-back" value="Back" />-->
+        </form>
+
+        <form class='big-profile-container view-courses' id='view-courses'>
+            <div class="BigMessage">Your Posted Courses</div>
+            <section class='courses' id='courses'>
+                <article class='courseContainer course'>
+
+                    <div class="profile-label SmallMessage">Course Name: </div>
+                    <div class='profile-attribute course-name'></div>
+
+                    <div class="profile-label SmallMessage">Course Title: </div>
+                    <div class='profile-attribute course-title'></div>
+
+                    <div class="profile-label SmallMessage">Course Description: </div>
+                    <div class='profile-attribute course-description'></div>
+
+                    <div class="profile-label SmallMessage">Course Instructor: </div>
+                    <div class='profile-attribute instructor'></div>
+                </article>
+            </section>
+            <!--<input type="button" class="myButton view-courses-back" value="Back" />-->
+        </form>
+
+        <div class="bannerStudent">
+            <input type="button" class="banner-button view-profile-gui-button" value="View profile" />
+
+            <input type="button" class="banner-button edit-profile" value="Edit Profile" />
+            <input type="button" class="banner-button view-ta-positions-apply" value="Apply For Position" />
+            <input type="button" class="banner-button logout-gui-button" value="Logout" />
+        </div>
+
+        <form class='student-display-current-applications big-profile-container'>
+            <div class="BigMessage">Your Applications</div>
+            <section class='current-applications' id='current-applications'>
+
+                <article class='current-student-application courseContainer'>
+                    <div class="profile-label SmallMessage">Instructor ID: </div>
+                    <div class='profile-attribute current-application-instructor-id'></div>
+
+                    <div class="profile-label SmallMessage">Course Name: </div>
+                    <div class='profile-attribute current-application-course-name'></div>
+
+                    <div class="profile-label SmallMessage">Status: </div>
+                    <div class='profile-attribute current-application-status'></div>
+
+                    <input type="button" class="myButton current-application-delete-button" value="Remove" />
+                </article>>
+            </section>
+        </form>
+
+        <form class='view-ta-positions big-profile-container'>
+            <div class="BigMessage">Available Courses</div>
+            <section class='view-all-ta-positions' id='view-all-ta-positions'>
+
+                <article class='courseContainer ta-position-student'>
+                    <div class="profile-label SmallMessage">Course Name: </div>
+                    <div class='profile-attribute student-ta-position-course-name'></div>
+
+                    <div class="profile-label SmallMessage">Instructor: </div>
+                    <div class='profile-attribute student-ta-position-instructor'></div>
+
+                    <div class="profile-label SmallMessage">Instructor ID: </div>
+                    <div class='profile-attribute student-ta-position-instructor-id'></div>
+                </article>
+
+            </section>
+        </form>
+
+    </div>
+
+</body>
+</html>
